@@ -1,4 +1,3 @@
-
 =head1 NAME
 
 Set::Object - set of objects and strings
@@ -97,7 +96,7 @@ to explicitly import this method.
 Add items to the C<Set::Object>.
 
 Adding the same object several times is not an error, but any
-C<Set::Object> will contain at most one occurence of the same object.
+C<Set::Object> will contain at most one occurrence of the same object.
 
 Returns the number of elements that were actually added.  As of
 Set::Object 1.23, C<undef> will not insert.
