@@ -24,7 +24,7 @@ by changing C<use Set::Object> to C<use Set::Object::Weak>.
 =cut
 
 package Set::Object::Weak;
-
+use strict;
 use base qw(Set::Object);  # boo hiss no moose::role yet I hear you say
 
 use base qw(Exporter);     # my users would hate me otherwise
