@@ -9,8 +9,13 @@ ppport.h
 README
 typemap
 t/ingy/arrayref.t
+t/misc/kwalitee.t
 t/misc/leaks.t
+t/misc/leaktrace.t
+t/misc/manifest.t
+t/misc/meta.t
 t/misc/more_leaks.t
+t/misc/perl_minimum_version.t
 t/misc/pod.t
 t/misc/pod_coverage.t
 t/misc/segfault.t
