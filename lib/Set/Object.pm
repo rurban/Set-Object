@@ -130,7 +130,7 @@ Return the objects contained in the C<Set::Object> in random (hash)
 order.
 
 Note that the elements of a C<Set::Object> in list context are returned
-sorted - C<@$set> - so using the C<members> method is faster.
+sorted - C<@$set> - so using the C<members> method is much faster.
 
 =head2 size
 
@@ -494,7 +494,7 @@ Tickets at RT L<https://rt.cpan.org/Public/Dist/Display.html?Name=Set-Object>
 
 Copyright (c) 1998-1999, Jean-Louis Leroy. All Rights Reserved.
 This module is free software. It may be used, redistributed
-and/or modified under the terms of the Perl Artistic License
+and/or modified under the terms of the Perl Artistic License 2.0.
 
 Portions Copyright (c) 2003 - 2005, Sam Vilain.  Same license.
 

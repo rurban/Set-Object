@@ -13,7 +13,7 @@ WriteMakefile(
   'NAME'	 => 'Set::Object',
   'VERSION_FROM' => 'lib/Set/Object.pm',
   'AUTHOR'    => 'Jean-Louis Leroy and Sam Vilain',
-  'LICENSE'   => 'Artistic',
+  'LICENSE'   => 'Artistic_2',
   'ABSTRACT'  => "Unordered collections (sets) of Perl Objects",
   'PREREQ_PM' => {
     'Scalar::Util'    => 0,
