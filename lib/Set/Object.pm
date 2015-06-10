@@ -1094,12 +1094,14 @@ sub member {
 }
 
 sub set {
-    local $@;
-    if (eval { $_[0]->isa(__PACKAGE__) }) {
-    	shift;
+    # RT #93516. decide between method call or taking a new set as 1st arg.
+    # set(set()) should be valid, set() is stringified as 'Set::Object()'
+    if (@_ and !ref($_[0]) and $_[0]->isa(__PACKAGE__)) {
+        shift;
     }
     __PACKAGE__->new(@_);
 }
+
 sub weak_set {
     my $self = __PACKAGE__->new();
     $self->weaken;

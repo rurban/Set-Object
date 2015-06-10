@@ -19,6 +19,11 @@ See L<[cpan #123582]|https://rt.cpan.org/Ticket/Display.html?id=123582>
 
 Stabilize F<t/misc/kwalitee.t> test
 
+=item *
+
+Make set(set()) work. Seperate between method calls and empty sets as 1st arg.
+Fixes RT #93516 by C<smls75@gmail.com>
+
 =back
 
 =head1 1.35, 2015-06-10

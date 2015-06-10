@@ -19,10 +19,10 @@ extern "C" {
 
 #ifdef SET_DEBUG
 /* for debugging object-related functions */
-#define IF_DEBUG(e)
+#define IF_DEBUG(e) e
 /* for debugging scalar-related functions */
 #define IF_REMOVE_DEBUG(e) e
-#define IF_INSERT_DEBUG(e)
+#define IF_INSERT_DEBUG(e) e
 /* for debugging weakref-related functions */
 #define IF_SPELL_DEBUG(e) e
 #else
@@ -863,7 +863,7 @@ DESTROY(self)
       ISET* s = INT2PTR(ISET*, SvIV(SvRV(self)));
       if ( s ) {
 	sv_setiv(SvRV(self), 0);
-	IF_DEBUG(_warn("aargh!"));
+	IF_DEBUG(_warn("DESTROY"));
 	iset_clear(s);
 	if (s->flat) {
 	  hv_undef(s->flat);
