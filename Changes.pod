@@ -15,6 +15,10 @@ Davem fixed get-magic for the new arguments, fixing
 NetHack-Item L<[perl #132152]|https://rt.perl.org/Public/Bug/Display.html?id=132152>.
 See L<[cpan #123582]|https://rt.cpan.org/Ticket/Display.html?id=123582>
 
+=item *
+
+Stabilize F<t/misc/kwalitee.t> test
+
 =back
 
 =head1 1.35, 2015-06-10
